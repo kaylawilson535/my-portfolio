@@ -1,3 +1,73 @@
-*, body, html {
-    color: red;
+@import 'shared/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import 'shared/variables.css';
+/*  
+    --color-dark-background: #495464;
+    --color-xdark-background: #222831;
+
+    --color-high-accent-text: #F4F4F2;
+    --color-medium-accent-text: #BBBFCA;
+*/
+body{
+    letter-spacing: 3px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--color-high-accent-text);
 }
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+a{
+    font-size: .75rem;
+    text-decoration: none;
+    color: var(--color-high-accent-text);
+}
+.project-header{
+    background-color: var(--color-xdark-background);
+    height: var(--screen-height);
+}
+.game-preview:nth-of-type(odd){
+    background-color: var(--color-dark-background);
+}
+.game-preview:nth-of-type(even){
+    background-color: var(--color-xdark-background);
+}
+.game-preview{
+    height: 40rem;
+}
+.preview-wrapper h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+.preview-content{
+    width:75%;
+    display:flex;
+    justify-content: space-between;
+    margin: 20% 0% 20% 15%;
+}
+.preview-img{
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+.preview-text{
+    width: 50%;
+}
+.preview-text p{
+    font-size: .75em;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    padding: 1rem 0rem;
+}
+

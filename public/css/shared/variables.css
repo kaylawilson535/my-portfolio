@@ -1,0 +1,10 @@
+:root{
+    /*Main Page*/
+    --color-dark-background: #495464;
+    --color-xdark-background: #222831;
+
+    --color-high-accent-text: #F4F4F2;
+    --color-medium-accent-text: #BBBFCA;
+
+    --screen-height: 100vh;
+}
