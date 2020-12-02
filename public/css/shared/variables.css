@@ -3,8 +3,17 @@
     --color-dark-background: #495464;
     --color-xdark-background: #222831;
 
+
     --color-high-accent-text: #F4F4F2;
     --color-medium-accent-text: #BBBFCA;
 
     --screen-height: 100vh;
+
+    --width-aspect-ratio-2-3: .666;
+    --height-aspect-ratio-2-3: .333;
+
+    --width-aspect-ratio-3-4: 1;
+    --height-aspect-ratio-3-4: .75;
+
+    --font-multiplier-1020: 1;
 }
