@@ -1,16 +1,42 @@
 @import 'shared/reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 @import 'shared/variables.css';
-/*  
-    --color-dark-background: #495464;
-    --color-xdark-background: #222831;
 
-    --color-high-accent-text: #F4F4F2;
-    --color-medium-accent-text: #BBBFCA;
-*/
+/*******************************/
+/*******************************/
+/********* 1920 x 1080 *********/
+/*******************************/
+/*******************************/
+
+/********** Main Tags **********/
+body{
+    letter-spacing: 3px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--color-high-accent-text);
+}
+h1{
+    font-size: calc(5rem * var(--font-multiplier-1020));
+    font-weight: bold;
+}
+h2{
+    font-size: calc(4rem * var(--font-multiplier-1020));
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+h3{
+    font-size: calc(1.75rem * var(--font-multiplier-1020));
+    font-weight: bold;
+}
+a{
+    font-size: calc(.75rem * var(--font-multiplier-1020));
+    text-decoration: none;
+    color: var(--color-high-accent-text);
+}
 .wrapper{
     display: flex;
 }
+
+/********** Sidebar **********/
 div.sidebar{
     z-index: 100;
     width: 15%;
@@ -30,37 +56,15 @@ div.sidebar{
 .sidebar div{
     width: 20%;
     margin: 0 auto;
-    padding: 2rem 0rem;
+    padding: 3rem 0rem 1rem;
     text-align: left;
 }
 .sidebar div a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color-high-accent-text-faded);
 }
-body{
-    letter-spacing: 3px;
-    font-family: 'Roboto Mono', monospace;
-    color: var(--color-high-accent-text);
-}
-h1{
-    font-size: calc(5rem * var(--font-multiplier-1020));
-    font-weight: bold;
-}
-h2{
-    font-size: calc(4rem * var(--font-multiplier-1020));
-    font-weight: bold;
-    letter-spacing: 10px;
-}
-h3{
-    font-size: calc(1.75rem * var(--font-multiplier-1020));
-    font-weight: bold;
-}
 
-a{
-    font-size: calc(.75rem * var(--font-multiplier-1020));
-    text-decoration: none;
-    color: var(--color-high-accent-text);
-}
+/********** Project Header **********/
 .project-header{
     background-color: var(--color-dark-background);
     height: var(--screen-height);
@@ -88,6 +92,7 @@ a{
     100%{color: transparent};
 }
 
+/********** Project Previews **********/
 .game-preview:nth-of-type(even){
     background-color: var(--color-dark-background);
 }
@@ -95,12 +100,14 @@ a{
     background-color: var(--color-xdark-background);
 }
 .preview-wrapper{
-    padding: 1rem 0rem 10rem 22rem;
+    padding: 1rem 0rem 15rem 20rem;
     justify-content: right;
 }
 .preview-wrapper h2{
     text-align: center;
 }
+
+/*** Project Icons ***/
 .vr-icon{
     width: 12rem;
     transform: translate(-2rem, 2rem);
@@ -121,9 +128,14 @@ a{
     width: 8rem;
     transform: translate(-2rem, 2rem);
 }
+
+/*** Project Content ***/
 .preview-content{
-    padding-top: 10rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 15rem;
     display:flex;
+    justify-content: space-around;
 }
 .preview-img{
     position: relative;
@@ -141,6 +153,7 @@ a{
     padding: 1rem 0rem 1rem;
 }
 
+/********** Footer **********/
 footer{
     padding: 1rem 0rem;
     position: absolute;
@@ -148,11 +161,362 @@ footer{
     height: 15vh;
     width: 100%;
     font-size: .6rem;
-    /* transform: translateY(-15vh); */
 }
 footer div{
     padding-left: 1rem;
 }
 .preview-link{
     z-index: 101;
+}
+
+/*******************************/
+/********* 1680 x 1050 *********/
+/*******************************/
+@media only screen and (max-width: 1680px){
+    div.sidebar{
+        top: 5rem;
+    }
+    .sidebar div{
+        padding: 2rem 0rem;
+    }
+}
+
+/*******************************/
+/********* 1600 x 900 *********/
+/*******************************/
+@media only screen and (max-width: 1600px){
+    div.sidebar{
+        top: 4rem;
+    }
+    .sidebar div{
+        padding: 1rem 0rem;
+    }
+}
+
+/*******************************/
+/********* 1536 x 864 *********/
+/*******************************/
+@media only screen and (max-width: 1536px){
+    div.sidebar{
+        top: 4rem;
+    }
+    .sidebar div{
+        padding: 1rem 0rem;
+    }
+
+}
+
+/*******************************/
+/********* 1440 x 900 *********/
+/*******************************/
+@media only screen and (max-width: 1440px){
+    div.sidebar{
+        top: 4rem;
+    }
+    .sidebar div{
+        padding: 1rem 0rem;
+    }
+    .preview-wrapper{
+        padding: 0rem 0rem 8rem 20rem;
+    }
+    .preview-content{
+        padding-top: 12rem;
+    }
+}
+
+/*******************************/
+/********* 1336 x 768 *********/
+/*******************************/
+@media only screen and (max-width: 1366px){
+    div.sidebar{
+        top: 3rem;
+    }
+    .sidebar div{
+        padding: 1.5rem 0rem;
+    }
+    .preview-wrapper{
+        padding: 0rem 0rem 5rem 20rem;
+    }
+    .preview-content{
+        padding-top: 12rem;
+    }
+    .vr-icon{
+        width: 9rem;
+        transform: translate(-2rem, 2rem);
+    }
+    .ar-icon{
+        width: 9rem;
+        transform: translate(-3rem, 3rem);
+    }
+    .phone-icon{
+        width: 9rem;
+        transform: translate(-3rem, 4rem);
+    }
+    .modelling-icon{
+        width: 9rem;
+        transform: translate(-4rem, 2rem);
+    }
+    .design-icon{
+        width: 6rem;
+        transform: translate(-2rem, 2rem);
+    }
+    .sidebar div a {
+        font-size: 1.5rem;
+    }
+}
+
+/*******************************/
+/********* 1280 x 800 *********/
+/*******************************/
+@media only screen and (max-width: 1280px){
+    .preview-content{
+        padding-top: 10rem;
+        width: 90%;
+    }
+    .preview-wrapper{
+        padding: 0rem 0rem 8rem 20rem;
+    }
+    .sidebar div a {
+        font-size: 1.5rem;
+    }
+}
+/*******************************/
+/********* In Between *********/
+/*******************************/
+@media only screen and (max-width: 1180px){
+    .preview-content{
+        padding-top: 10rem;
+        width: 100%;
+    }
+    .preview-wrapper{
+        padding: 0rem 0rem 8rem 15rem;
+    }
+    .sidebar div a {
+        font-size: 1.5rem;
+    }
+}
+
+/*******************************/
+/********* iPad Pro *********/
+/*******************************/
+@media only screen and (max-width: 1024px){
+    div.sidebar{
+        top: 10rem;
+    }
+    .sidebar div{
+        padding: 3rem 0rem;
+    }
+
+    .preview-content{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 0rem;
+        text-align: center;
+
+    }
+    img.preview-img{
+        padding: 10rem 0rem 4rem;
+    }
+    div.preview-text{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    div.preview-wrapper{
+        padding-bottom: 12rem;
+    }
+    a.learn-more{
+        text-align: right;
+    }
+    .preview-text h2{
+        width: 70%;
+        text-align: left;
+    }
+    .preview-text p{
+        font-size: calc(1rem * var(--font-multiplier-1020));
+        line-height: 1.25;
+        padding: 1rem 0rem 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/*******************************/
+/************ iPad *************/
+/*******************************/
+@media only screen and (max-width: 768px){
+    div.sidebar{
+        top: 10rem;
+    }
+    div.preview-wrapper{
+        padding-bottom: 10rem;
+    }
+    img.preview-img{
+        padding: 15rem 0rem 4rem;
+    }
+
+    .modelling-icon{
+        width: 7rem;
+        transform: translate(-4rem, 2rem);
+    }
+    .design-icon{
+        width: 4rem;
+        transform: translate(-2rem, .5rem);
+    }
+    .preview-wrapper{
+        padding-top: 1rem;
+    }
+    .long-header{
+        padding-top: 3rem;
+    }
+}
+
+/*******************************/
+/********* Surface Duo *********/
+/*******************************/
+@media only screen and (max-width: 540px){
+    div.sidebar{
+        display: none;
+    }
+    div.preview-content{
+        width: 100%;
+    }
+    .preview-wrapper{
+        padding: 0rem 0rem 8rem 0rem;
+    }
+    div.preview-text{
+        width: 90%;
+    }
+    img.preview-img{
+        text-align: center;
+
+        padding: 8rem 0rem 4rem;
+    }
+    .preview-img{
+        position: relative;
+        margin: 0 auto;
+        width: calc(var(--width-aspect-ratio-3-4) * 25rem);
+        height: calc(var(--height-aspect-ratio-3-4) * 25rem);
+    }
+}
+
+/*******************************/
+/*iPhone Plus, Pixel 2, Pixel XL*/
+/*******************************/
+@media only screen and (max-width: 414px){
+    body{
+        background-color: var(--color-xdark-background);
+    }
+    img.social{
+        padding: 1rem 1rem;
+    }
+    .game-preview:nth-of-type(even){
+        background-color: var(--color-dark-background);
+    }
+    .game-preview:nth-of-type(odd){
+        background-color: var(--color-dark-background);
+    }
+    .game-preview{
+        /* border-radius: 10px; */
+        width: 90%;
+        margin: 5rem auto;
+    }
+    .project-header{
+        margin-bottom: 5rem;
+    }
+    .preview-img{
+        position: relative;
+        margin: 0 auto;
+        width: calc(var(--width-aspect-ratio-3-4) * 20rem);
+        height: calc(var(--height-aspect-ratio-3-4) * 20rem);
+    }
+    .preview-wrapper h2{
+        font-size: 2.5rem;
+        padding-top: 2rem;
+    }
+    /*** Project Icons ***/
+    .vr-icon{
+        width: 4rem;
+        transform: translate(-2rem, 1rem);
+    }
+    .ar-icon{
+        width: 4rem;
+        transform: translate(-1rem, 1rem);
+    }
+    .phone-icon{
+        width: 4rem;
+        transform: translate(-1rem, 1rem);
+    }
+    .modelling-icon{
+        width: 4rem;
+        transform: translate(-1rem, 1rem);
+    }
+    h2.long-header{
+        font-size: 2.5rem;
+    }
+    .design-icon{
+        width: 3rem;
+        transform: translate(-1rem, 1rem);
+    }
+    img.preview-img{
+        padding: 5rem 0rem 2rem;
+    }
+    div.preview-wrapper{
+        padding-bottom: 3rem;
+        justify-content: right;
+    }
+    .preview-text p{
+        width: 85%;
+    }
+    div.preview-text{
+        width: 100%;
+    }
+}
+
+/*******************************/
+/********* iPhone X *********/
+/*******************************/
+@media only screen and (max-width: 375px){
+    .preview-text p{
+        width: 95%;
+        letter-spacing: 2px;
+    }
+}
+
+/*******************************/
+/******Galaxy S5, Moto G4*******/
+/*******************************/
+@media only screen and (max-width: 360px){
+    .preview-text p{
+        font-size: .8rem;
+    }
+    .preview-text h2{
+        font-size: 2rem;
+    }
+    .preview-text h3{
+        font-size: 1.5rem;
+    }
+    .preview-img{
+        position: relative;
+        margin: 0 auto;
+        width: calc(var(--width-aspect-ratio-3-4) * 18rem);
+        height: calc(var(--height-aspect-ratio-3-4) * 18rem);
+    }
+}
+
+/*******************************/
+/******** iPhone 5 *********/
+/*******************************/
+@media only screen and (max-width: 321px){
+    .preview-text p{
+        font-size: .8rem;
+    }
+    h2.long-header{
+        font-size: 2rem;
+    }
+    img.preview-img{
+        padding: 4rem 0rem 2rem;
+    }
 }
