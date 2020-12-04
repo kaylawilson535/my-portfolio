@@ -155,6 +155,7 @@ div.sidebar{
 
 /********** Footer **********/
 footer{
+    letter-spacing: normal;
     padding: 1rem 0rem;
     position: absolute;
     background-color: var(--color-dark-background);
