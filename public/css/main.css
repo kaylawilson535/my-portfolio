@@ -9,6 +9,8 @@
 /*******************************/
 
 /********** Main Tags **********/
+
+
 body{
     letter-spacing: 3px;
     font-family: 'Roboto Mono', monospace;
@@ -63,6 +65,10 @@ div.sidebar{
     font-size: 2rem;
     color: var(--color-high-accent-text-faded);
 }
+.side-link:hover{
+    font-weight: 600;
+    color: var(--color-high-accent-text);
+}
 
 /********** Project Header **********/
 .project-header{
@@ -72,12 +78,18 @@ div.sidebar{
 }
 .socials{
     text-align: right;
-    margin: 0 auto;
+    margin: 0rem auto;
 }
 .social{
     width: 3rem;
-    padding: 1rem 3rem;
+    margin: 1rem 2.5rem;
+    border: 5px solid var(--color-dark-background);
 }
+.social:hover{
+    border: 5px solid var(--color-xdark-background);
+    border-radius:  100%;
+}
+
 .scroll-arrow{
     position:absolute;
     bottom: 2rem;
@@ -109,24 +121,24 @@ div.sidebar{
 
 /*** Project Icons ***/
 .vr-icon{
-    width: 12rem;
-    transform: translate(-2rem, 2rem);
+    width: 9rem;
+    transform: translate(2rem, 2rem);
 }
 .ar-icon{
-    width: 12rem;
-    transform: translate(-3rem, 3rem);
+    width: 9rem;
+    transform: translate(1rem, 3rem);
 }
 .phone-icon{
-    width: 12rem;
-    transform: translate(-3rem, 4rem);
+    width: 9rem;
+    transform: translate(0rem, 3rem);
 }
 .modelling-icon{
-    width: 12rem;
-    transform: translate(-4rem, 2rem);
+    width: 9rem;
+    transform: translate(2rem, 2rem);
 }
 .design-icon{
-    width: 8rem;
-    transform: translate(-2rem, 2rem);
+    width: 6rem;
+    transform: translate(2rem, 2rem);
 }
 
 /*** Project Content ***/
@@ -152,6 +164,12 @@ div.sidebar{
     line-height: 1.25;
     padding: 1rem 0rem 1rem;
 }
+a.learn-more{
+    font-size: 1.3rem;
+    text-align: right;
+    padding-top: 1rem;
+    text-decoration: underline;
+}
 
 /********** Footer **********/
 footer{
@@ -159,15 +177,26 @@ footer{
     padding: 1rem 0rem;
     position: absolute;
     background-color: var(--color-dark-background);
-    height: 15vh;
     width: 100%;
     font-size: .6rem;
+    text-align: center;
 }
 footer div{
     padding-left: 1rem;
 }
 .preview-link{
     z-index: 101;
+}
+.contact-info{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.contact-email{
+    font-size: .9rem;
+    padding-top: 1rem;
+}
+.contact-wrapper{
+    padding: 1rem 0rem 1.5rem;
 }
 
 /*******************************/
@@ -243,23 +272,23 @@ footer div{
     }
     .vr-icon{
         width: 9rem;
-        transform: translate(-2rem, 2rem);
+        transform: translate(2rem, 2rem);
     }
     .ar-icon{
         width: 9rem;
-        transform: translate(-3rem, 3rem);
+        transform: translate(1rem, 3rem);
     }
     .phone-icon{
         width: 9rem;
-        transform: translate(-3rem, 4rem);
+        transform: translate(0rem, 3rem);
     }
     .modelling-icon{
         width: 9rem;
-        transform: translate(-4rem, 2rem);
+        transform: translate(2rem, 2rem);
     }
     .design-icon{
         width: 6rem;
-        transform: translate(-2rem, 2rem);
+        transform: translate(2rem, 2rem);
     }
     .sidebar div a {
         font-size: 1.5rem;
@@ -329,11 +358,14 @@ footer div{
         padding-bottom: 12rem;
     }
     a.learn-more{
+        font-size: 1.2rem;
         text-align: right;
+        padding-top: 1rem;
     }
     .preview-text h2{
         width: 70%;
         text-align: left;
+        font-size: 1rem;
     }
     .preview-text p{
         font-size: calc(1rem * var(--font-multiplier-1020));
@@ -349,22 +381,16 @@ footer div{
 /*******************************/
 @media only screen and (max-width: 768px){
     div.sidebar{
-        top: 10rem;
+        display: none;
     }
     div.preview-wrapper{
+        width: 100%;
         padding-bottom: 10rem;
+        padding: 0rem 0rem 8rem 0rem;
     }
     img.preview-img{
-        padding: 15rem 0rem 4rem;
-    }
-
-    .modelling-icon{
-        width: 7rem;
-        transform: translate(-4rem, 2rem);
-    }
-    .design-icon{
-        width: 4rem;
-        transform: translate(-2rem, .5rem);
+        text-align: center;
+        padding: 8rem 0rem 4rem;
     }
     .preview-wrapper{
         padding-top: 1rem;
@@ -378,6 +404,7 @@ footer div{
 /********* Surface Duo *********/
 /*******************************/
 @media only screen and (max-width: 540px){
+
     div.sidebar{
         display: none;
     }
@@ -390,11 +417,32 @@ footer div{
     div.preview-text{
         width: 90%;
     }
-    img.preview-img{
-        text-align: center;
-
-        padding: 8rem 0rem 4rem;
+    .preview-wrapper h2{
+        font-size: 2.5rem;
+        padding-top: 2rem;
     }
+    /*** Project Icons ***/
+    .vr-icon{
+        width: 4rem;
+        transform: translate(1rem, 1rem);
+    }
+    .ar-icon{
+        width: 4rem;
+        transform: translate(1rem, 1rem);
+    }
+    .phone-icon{
+        width: 4rem;
+        transform: translate(1rem, 1rem);
+    }
+    .modelling-icon{
+        width: 4rem;
+        transform: translate(1rem, 1rem);
+    }
+    .design-icon{
+        width: 3rem;
+        transform: translate(1rem, 1rem);
+    }
+    
     .preview-img{
         position: relative;
         margin: 0 auto;
@@ -407,11 +455,15 @@ footer div{
 /*iPhone Plus, Pixel 2, Pixel XL*/
 /*******************************/
 @media only screen and (max-width: 414px){
+    .preview-wrapper h2{
+        font-size: 1.5rem;
+    }
     body{
         background-color: var(--color-xdark-background);
     }
     img.social{
-        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+
     }
     .game-preview:nth-of-type(even){
         background-color: var(--color-dark-background);
@@ -433,34 +485,7 @@ footer div{
         width: calc(var(--width-aspect-ratio-3-4) * 20rem);
         height: calc(var(--height-aspect-ratio-3-4) * 20rem);
     }
-    .preview-wrapper h2{
-        font-size: 2.5rem;
-        padding-top: 2rem;
-    }
-    /*** Project Icons ***/
-    .vr-icon{
-        width: 4rem;
-        transform: translate(-2rem, 1rem);
-    }
-    .ar-icon{
-        width: 4rem;
-        transform: translate(-1rem, 1rem);
-    }
-    .phone-icon{
-        width: 4rem;
-        transform: translate(-1rem, 1rem);
-    }
-    .modelling-icon{
-        width: 4rem;
-        transform: translate(-1rem, 1rem);
-    }
-    h2.long-header{
-        font-size: 2.5rem;
-    }
-    .design-icon{
-        width: 3rem;
-        transform: translate(-1rem, 1rem);
-    }
+    
     img.preview-img{
         padding: 5rem 0rem 2rem;
     }
