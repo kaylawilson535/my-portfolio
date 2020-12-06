@@ -1,0 +1,11 @@
+:root{
+    
+    --color-dark-bg: #790C5A;
+    --color-box-fill: #F1D4D4;
+    --color-box-border: #CC0E74;
+    --color-header-bg: #E6739F80;
+
+    --color-dark-text: #790C5A;
+    --color-header-text: #F1D4D4;
+    --color-box-text: #E6739F;
+}

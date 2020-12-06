@@ -1,0 +1,155 @@
+@import 'shared/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&display=swap');
+@import 'shared/eofe-variables.css';
+
+/*
+    --color-dark-bg: #790C5A;
+    --color-box-fill: #F1D4D4;
+    --color-box-border: #CC0E74;
+    --color-header-bg: #E6739F80;
+
+    --color-dark-text: #790C5A;
+    --color-header-text: #F1D4D4;
+    --color-box-text: #E6739F;
+*/
+
+body{
+    font-family: 'Exo 2', sans-serif;
+    background-color: var(--color-dark-bg); 
+}
+div.top-bar{
+    z-index: 100;
+    height: 5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: var(--color-header-bg);
+}
+h1{
+    font-size: 5rem;
+}
+
+.socials{
+    text-align: right;
+    margin: 0rem auto;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.social{
+    width: 3rem;
+    margin: 1rem 2.5rem;
+
+    border: 5px solid var(--color-dark-background);
+}
+.back{
+    display: inline-block;
+    text-align: left;
+    margin: 0rem auto;
+}
+.back-icon{
+    margin: 1rem 2.5rem;
+    width: 3rem;
+    border: 5px solid var(--color-dark-background);
+}
+.social:hover{
+    border: 5px solid var(--color-xdark-background);
+    border-radius:  100%;
+}
+.banner-wrapper{
+    position: relative;
+    display: flex;
+}
+.banner-img{
+    width: 20%;
+}
+.header-text{
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.header-text h1{
+    font-weight: 700;
+    color: var(--color-box-fill);
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--color-dark-text);
+}
+
+.info-img img{
+    width: 10rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-header-text);
+}
+h3{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-dark-text);
+    padding-bottom: 1rem;
+}
+p{
+    color: var(--color-box-text);
+}
+
+.summary{
+    margin: 10rem auto;
+}
+.summary-wrapper{
+    background-color: var(--color-box-fill);
+    width: 70%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 3px solid var(--color-box-border);
+}
+
+.info-text, .info-img div{
+    background-color: var(--color-box-fill);
+    width: 70%;
+    margin-top: 5rem;
+    padding: 2rem;
+    border: 3px solid var(--color-box-border);
+}
+
+.info-text{
+    width: 70%;
+    border-left: none;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.info-img{
+    display: block;
+    width: 70%;
+    min-width: 400px;
+    
+}
+.info-img div{
+    width: 70%;
+    border-right: none;
+    border-radius: 1rem 0rem 0rem 1rem;
+
+    text-align: right;
+    width: 100%;
+}
+
+
+
+
+footer{
+    letter-spacing: normal;
+    padding: 1rem 0rem;
+    position: absolute;
+    background-color: var(--color-dark-background);
+    width: 100%;
+    font-size: .6rem;
+    text-align: center;
+}
