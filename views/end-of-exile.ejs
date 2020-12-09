@@ -19,6 +19,10 @@
         <div class="back">
             <a href="/"><img class="back-icon" src="images/home.svg"></a>
         </div>
+
+        <div class="header-text">
+            <h1>End of Exile</h1>
+        </div>
         
         <div class="socials">
             <a href="https://github.com/kaylawilson535"><img class="social" src="images/github-pink.svg"></a>
@@ -28,85 +32,111 @@
     </div>
 
     <header>
-        <div class="banner-wrapper">
-            <img class="banner-img" src="images/placeholder.jpg">
-            <img class="banner-img" src="images/placeholder.jpg">
-            <img class="banner-img" src="images/placeholder.jpg">
-            <img class="banner-img" src="images/placeholder.jpg">
-            <img class="banner-img" src="images/placeholder.jpg">
-
-        </div>
-        <div class="header-text">
-            <h1>End of Exile</h1>
-        </div>
+        
 
     </header>
 
     
     <section class="summary">
-        <h2>The Why:</h2>
-        <div class="summary-wrapper">
-            <h3>End of Exile's Broader Significance</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium et quibusdam doloribus voluptatem, fuga libero omnis soluta exercitationem corporis itaque?
-            </p>
+        
+            <div class="summary-wrapper">
+                <div class = "h2-holder">
+                    <h2>Summary</h2>
+                </div>
+                
+                <p>
+                    End of Exile is a game in which the player is competing to pardon themselves from a national exile. In order to compete however, they must first gain sponsorship from townspeople through casual conversation. Players quickly realize that they can collect sponsors faster by simply agreeing and abiding by the town’s beliefs. It isn’t until the ending scene, during a phone call with the player’s parents, that their own identity shift is realized. 
+                    The reason I created End of Exile was to shine light on the micro decisions that many people make daily about conforming to ideals of success and community, or standing by their own truth and risking social exile. This metaphor was best portrayed in a medium which people were already comfortable with; gaming. The metaphor was also aided by the use of VR which can quite literally put the player inside someone else’s shoes.
+                </p>
+            </div>
+        
+        <div class= "video-wrapper">
+            <iframe src="https://www.youtube.com/embed/mvpw5Lsjy2U?mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        
+        
+        
     </section>
 
     
     <section class="obstacles">
-        <h2>Obstacles</h2>
-        <div class="info-wrapper">
-            <div class="info-text">
-                <h3>Learning</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium et quibusdam doloribus voluptatem, fuga libero omnis soluta exercitationem corporis itaque?
-                </p>
+        <div class = "h2-holder">
+            <h2>Obstacles</h2>
+        </div>
+        <div class="obstacles-content">
+            <div class="info-wrapper">
+                <div class="info-text">
+                    <h3>New Tech</h3>
+                    <p>
+                        Due to how new VR technology is to the open-source community, it was quite difficult to troubleshoot some of the issues that arose. Specifically, OVR had many small issues pop up throughout development that others had not yet had. To get past this, I had to rely on the Oculus documentation rather than just reading forums. In addition to just knowing where to look I had to practice a lot of patience throughout the project.
+                    </p>
+                </div>
+            </div>
+            
+    
+            <div class="info-wrapper">
+                <div class="info-text">
+                    <h3>Broken Files</h3>
+                    <p>
+                        One of the most common recurring issues was broken files while transferring between engines (Maya, Substance, Unity). These files would either be incompatible or not formatted correctly. To solve this, I relied on my own documentation that I made anytime I had a successful transfer since I knew I would be repeating that task later on. I also kept many backups and used source control which saved me a great deal after my computer crashed and corrupted my progress about halfway through. Luckily I had a day old copy I was able to pick up from.
+                    </p>
+                </div>
             </div>
     
-            <div class="info-img">
-                <div>
-                    <img src="images/placeholder.jpg">
+            <div class="info-wrapper">
+                <div class="info-text">
+                    <h3>Slow Renders</h3>
+                    <p>
+                        Since VR often struggles to render as quickly as other gaming platforms I found myself unable to play one of my scenes without it crashing. Since I knew the root issue was the amount of 3d objects rendering, I used a reflection probe to capture a 3d image of those objects, then rendered that image onto a cube map and deleted the 3d objects. This meant the engine no longer needed to render 3d objects for my background and only needed to render a 2d cube map, optimizing the game greatly.
+                    </p>
                 </div>
             </div>
         </div>
         
 
-        <div class="info-wrapper">
-            <div class="info-text">
-                <h3>Patience</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium et quibusdam doloribus voluptatem, fuga libero omnis soluta exercitationem corporis itaque?
-                </p>
-            </div>
-    
-            <div class="info-img">
-                <div>
-                    <img src="images/placeholder.jpg">
-                </div>
-            </div>
-        </div>
-
-        <div class="info-wrapper">
-            <div class="info-text">
-                <h3>Optimization</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium et quibusdam doloribus voluptatem, fuga libero omnis soluta exercitationem corporis itaque?
-                </p>
-            </div>
-    
-            <div class="info-img">
-                <div>
-                    <img src="images/placeholder.jpg">
-                </div>
-            </div>
-        </div>
-
     </section>
 
     
-    <section class="tect-stack">
-        <h2>Tech Stack: </h2>
+    <section class="tech-stack">
+        <div class = "h2-holder">
+            <h2>Tech Stack</h2>
+        </div>
+        <div class="tech-stack-wrapper">
+            <div class="stack">
+                <h3>
+                    C#
+                </h3>
+                <p>
+                    C# is the primary compiling language used in Unity. I was able to create classes that were based off of OOP such as the state machine of the repel gun.
+                </p>
+            </div>
+            <div class="stack">
+                <h3>
+                    Unity
+                </h3>
+                <p>
+                    Unity game engine made the creation of the game much more efficient and quicker to pick up. Specifically, the OVR plugin that allowed Oculus SDKs to work with the code I was writing.
+
+                </p>
+            </div>
+            <div class="stack">
+                <h3>
+                    Maya
+                </h3>
+                <p>
+                    Prior to starting the project I had no previous knowledge of 3D softwares. I was able to learn Maya and create from scratch multiple 3d models that were rigged, textured, and animated.
+
+                </p>
+            </div>
+            <div class="stack">
+                <h3>
+                    Substance
+                </h3>
+                <p>
+                    While I had textured some models in Photoshop, I quickly found that the material based rendering in Substance Painter far outweighed the familiarity of Photoshop.
+                </p>
+            </div>
+        </div>
         
     </section>
 
