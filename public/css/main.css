@@ -163,12 +163,26 @@ div.sidebar{
     font-size: calc(1rem * var(--font-multiplier-1020));
     line-height: 1.25;
     padding: 1rem 0rem 1rem;
+    margin-bottom: 1rem;
 }
 a.learn-more{
-    font-size: 1.3rem;
-    text-align: right;
-    padding-top: 1rem;
-    text-decoration: underline;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.light-button, .dark-button{
+    display: inline;
+    margin-top: 1rem;
+    padding: .9rem;
+    border-radius: 4px;
+    background-color: var(--color-high-accent-text);
+}
+.light-button a.learn-more{
+    color: var(--color-xdark-background);
+}
+.dark-button a.learn-more{
+    color: var(--color-dark-background);
+
 }
 
 /********** Footer **********/
@@ -372,7 +386,7 @@ footer div{
         line-height: 1.25;
         padding: 1rem 0rem 1rem;
         width: 80%;
-        margin: 0 auto;
+        margin: 0rem auto 1rem;
     }
 }
 
