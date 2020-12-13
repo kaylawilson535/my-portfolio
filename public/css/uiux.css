@@ -1,0 +1,182 @@
+@import 'shared/reset.css';
+@import 'shared/uiux-variables.css';
+
+/*
+    --color-light-bg: #c8c8c8;
+    --color-box-fill: #acacac;
+    --color-box-border: #414141;
+    --color-header-bg: hsla(0, 0%, 80%, 0.502);
+
+    --color-dark-text: #414141;
+    --color-header-text: #242424;
+    --color-box-text: #414141;
+*/
+
+body{
+    background-color: var(--color-light-bg);
+    color: var(--color-dark-text);
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    padding: 2rem 0rem 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/*********** Sticky Header ************/
+div.top-bar{
+    z-index: 100;
+    height: 5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: var(--color-header-bg);
+}
+/** Sticky Header Icons **/
+.socials{
+    text-align: right;
+    margin: 0rem auto;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+}
+.social{
+    width: 3rem;
+    margin: 1rem 2.5rem;
+    border: 5px solid var(--color-dark-background);
+}
+.social:hover{
+    border: 5px solid var(--color-xdark-background);
+    border-radius:  100%;
+}
+.back{
+    display: inline-block;
+    text-align: left;
+    width: 10%;
+    margin: 0rem auto;
+}
+.back-icon{
+    margin: 1rem 2.5rem;
+    width: 3rem;
+    border: 5px solid var(--color-dark-background);
+}
+/*********** Project Wrappers ************/
+.project-wrapper{
+    width: 30%;
+    margin: 5rem auto;
+}
+.text-wrapper{
+    text-align: center;
+}
+.iframe-wrapper{
+    text-align: center;
+    padding-top: 2rem;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+/*******************************/
+/********* width: 2000 *********/
+/*******************************/
+@media only screen and (max-width: 2000px){
+    .project-wrapper{
+        width: 50%;
+    }
+}
+
+/*******************************/
+/********* width: 1500 *********/
+/*******************************/
+@media only screen and (max-width: 1500px){
+    .project-wrapper{
+        width: 60%;
+    }
+}
+
+/*******************************/
+/********* width: 1200 *********/
+/*******************************/
+@media only screen and (max-width: 1200px){
+    .project-wrapper{
+        width: 70%;
+    }
+    /** Sticky Header **/
+    .social{
+        width: 2rem;
+        margin: 1rem 1.5rem;
+    }
+    .back{
+        width: 10%;
+    }
+    .back-icon{
+        width: 2rem;
+        margin: 1rem 1.5rem;
+    }
+}
+
+
+/*******************************/
+/********* width: 1000 *********/
+/*******************************/
+@media only screen and (max-width: 1000px){
+    .project-wrapper{
+        width: 80%;
+        margin-top: 2rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+/*******************************/
+/********* width: 800 *********/
+/*******************************/
+@media only screen and (max-width: 800px){
+    .project-wrapper{
+        width: 90%;
+    }
+}
+
+/*******************************/
+/********* width: 400 *********/
+/*******************************/
+@media only screen and (max-width: 450px){
+    .project-wrapper{
+        width: 80%;
+        margin-top: 1rem;
+    }
+    h1{
+        display: none;
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    div.top-bar{
+        height: 3rem;
+    }
+    .social{
+        width: 1.5rem;
+        margin: .5rem 1.5rem;
+    }
+    .back{
+        width: 10%;
+    }
+    .back-icon{
+        margin: .5rem 1.5rem;
+        width: 1.5rem;
+    }
+}

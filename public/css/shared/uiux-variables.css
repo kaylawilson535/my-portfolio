@@ -1,0 +1,12 @@
+:root{
+    
+    --color-light-bg: #c8c8c8;
+    --color-box-fill: #acacac;
+    --color-box-border: #414141;
+    --color-header-bg: hsla(0, 0%, 80%, 0.502);
+
+    --color-dark-text: #414141;
+    --color-header-text: #242424;
+    --color-box-text: #414141;
+}
+
