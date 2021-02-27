@@ -12,7 +12,7 @@
 
 
 body{
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-family: 'Roboto Mono', monospace;
     color: var(--color-high-accent-text);
 }
@@ -71,13 +71,34 @@ div.sidebar{
 }
 
 /********** Project Header **********/
+#spacer{
+    background-color: var(--color-side-spacer);
+    position: absolute;
+    width: 25rem;
+    height: 321rem;
+}
+#profile-img{
+    width: 200px;
+    height: 200px;
+}
+#profile-img-container{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 100%;
+    background-color: var(--color-profile-background);
+    display: inline-block;
+    margin-bottom: 3rem;
+}
 .project-header{
+    padding: 5rem 0rem 5rem 20rem;
+    justify-content: right;
     background-color: var(--color-dark-background);
-    height: var(--screen-height);
-    text-align: right;
+    /*height: var(--screen-height);*/
+    text-align: center;
 }
 .socials{
-    text-align: right;
+    text-align: center;
     margin: 0rem auto;
 }
 .social{
@@ -107,9 +128,11 @@ div.sidebar{
 /********** Project Previews **********/
 .game-preview:nth-of-type(even){
     background-color: var(--color-dark-background);
+    color: var(--color-high-accent-text);
 }
 .game-preview:nth-of-type(odd){
     background-color: var(--color-xdark-background);
+    color: var(--color-medium-accent-text);
 }
 .preview-wrapper{
     padding: 1rem 0rem 15rem 20rem;
@@ -175,13 +198,13 @@ a.learn-more{
     margin-top: 1rem;
     padding: .9rem;
     border-radius: 4px;
-    background-color: var(--color-high-accent-text);
+    background-color: var(--color-button-background);
 }
 .light-button a.learn-more{
-    color: var(--color-xdark-background);
+    color: var(--color-high-accent-text);
 }
 .dark-button a.learn-more{
-    color: var(--color-dark-background);
+    color: var(--color-high-accent-text);
 
 }
 
@@ -223,6 +246,11 @@ footer div{
     .sidebar div{
         padding: 2rem 0rem;
     }
+    #spacer{
+    height: 330rem;
+    width: 23rem;
+    }
+
 }
 
 /*******************************/
@@ -247,13 +275,16 @@ footer div{
     .sidebar div{
         padding: 1rem 0rem;
     }
-
 }
 
 /*******************************/
 /********* 1440 x 900 *********/
 /*******************************/
 @media only screen and (max-width: 1440px){
+    #spacer{
+    height: 275rem;
+    width: 20rem;
+    }
     div.sidebar{
         top: 4rem;
     }
@@ -268,10 +299,16 @@ footer div{
     }
 }
 
+
+
+
 /*******************************/
 /********* 1336 x 768 *********/
 /*******************************/
 @media only screen and (max-width: 1366px){
+     #spacer{
+    height: 263rem;
+    }
     div.sidebar{
         top: 3rem;
     }
@@ -308,6 +345,14 @@ footer div{
         font-size: 1.5rem;
     }
 }
+/*******************************/
+/********* 1300 x 800 *********/
+/*******************************/
+@media only screen and (max-width: 1300px){
+    #spacer{
+    height: 275rem;
+    }
+}
 
 /*******************************/
 /********* 1280 x 800 *********/
@@ -323,6 +368,11 @@ footer div{
     .sidebar div a {
         font-size: 1.5rem;
     }
+    #spacer{
+    height: 262rem;
+    width: 18rem;
+    }
+
 }
 /*******************************/
 /********* In Between *********/
@@ -338,12 +388,18 @@ footer div{
     .sidebar div a {
         font-size: 1.5rem;
     }
+    #spacer{
+    width: 14.5rem;
+    }
 }
 
 /*******************************/
 /********* iPad Pro *********/
 /*******************************/
 @media only screen and (max-width: 1024px){
+    #spacer{
+    height: 365rem;
+    }
     div.sidebar{
         top: 10rem;
     }
@@ -390,10 +446,31 @@ footer div{
     }
 }
 
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 840px){
+    #spacer{
+    height: 375rem;
+    }
+}
+
+
+
+
+
 /*******************************/
 /************ iPad *************/
 /*******************************/
 @media only screen and (max-width: 768px){
+    #spacer{
+    display: none;
+    }
     div.sidebar{
         display: none;
     }

@@ -1,11 +1,11 @@
 :root{
     
-    --color-dark-bg: #822956;
-    --color-box-fill: #F1D4D4;
-    --color-box-border: #CC0E74;
-    --color-header-bg: #E6739F80;
+    --color-dark-bg: #c5d7bd;
+    --color-box-fill: #bfb051;
+    --color-box-border: #383e56;
+    --color-header-bg: #9fb8ad;
 
-    --color-dark-text: #822956;
-    --color-header-text: #F1D4D4;
-    --color-box-text: #E6739F;
+    --color-dark-text: #383e56;
+    --color-header-text: #383e56;
+    --color-box-text: #383e56;
 }

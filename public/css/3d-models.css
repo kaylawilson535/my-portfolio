@@ -73,7 +73,7 @@ div.top-bar{
 .social{
     width: 3rem;
     margin: 1rem 2.5rem;
-    border: 5px solid var(--color-dark-background);
+    border: 5px solid var(--color-header-bg);
 }
 .social:hover{
     border: 5px solid var(--color-xdark-background);
@@ -88,7 +88,7 @@ div.top-bar{
 .back-icon{
     margin: 1rem 2.5rem;
     width: 3rem;
-    border: 5px solid var(--color-dark-background);
+    border: 5px solid var(--color-header-bg);
 }
 
 /*********** Summary Section ************/
@@ -118,6 +118,9 @@ div.top-bar{
 }
 
 /*********** Obstacle Section ************/
+.tech-stack{
+    padding-bottom: 5rem;
+}
 .obstacles{
     margin: 15rem auto 10rem;
 }

@@ -1,12 +1,12 @@
 :root{
     
-    --color-light-bg: #c8c8c8;
-    --color-box-fill: #acacac;
-    --color-box-border: #414141;
-    --color-header-bg: hsla(0, 0%, 80%, 0.502);
+    --color-dark-bg: #c5d7bd;
+    --color-box-fill: #bfb051;
+    --color-box-border: #383e56;
+    --color-header-bg: #9fb8ad;
 
-    --color-dark-text: #414141;
-    --color-header-text: #242424;
-    --color-box-text: #414141;
+    --color-dark-text: #383e56;
+    --color-header-text: #383e56;
+    --color-box-text: #383e56;
 }
 

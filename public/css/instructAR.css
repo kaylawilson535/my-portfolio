@@ -139,6 +139,7 @@ iframe{
 /*********** Tech Stack Section ************/
 .tech-stack{
     margin-top: 15rem;
+    padding-bottom: 5rem;
 }
 .tech-stack-wrapper{
     display: flex;

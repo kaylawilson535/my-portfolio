@@ -9,6 +9,7 @@ body{
 }
 h1{
     font-size: 3rem;
+    color: var(--color-box-text);
 }
 h2{
     text-align: center;
@@ -57,7 +58,7 @@ div.top-bar{
 .header-text h1{
     text-align: center;
     font-weight: 700;
-    color: var(--color-box-fill);
+    color: var(--color-box-text);
 }
 /** Sticky Header Icons **/
 .socials{
@@ -252,6 +253,7 @@ footer{
     /** Tech Stack Section **/
     .tech-stack-wrapper{
         display: block;
+        padding-bottom: 5rem;
     }
     .stack{
         padding-top: 3rem;

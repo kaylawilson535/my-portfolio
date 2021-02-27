@@ -13,10 +13,12 @@
 */
 
 body{
-    background-color: var(--color-light-bg);
+
+    background-color: var(--color-dark-bg);
     color: var(--color-dark-text);
 }
 h1{
+        padding-top: 3rem;
     font-size: 4rem;
     text-align: center;
 }

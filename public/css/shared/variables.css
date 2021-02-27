@@ -1,12 +1,18 @@
 :root{
     /*Main Page*/
-    --color-dark-background: #495464;
-    --color-xdark-background: #222831;
+    --color-dark-background: #c5d7bd;
+    --color-xdark-background: #9fb8ad;
+    --color-profile-background: #bfb051;
+    --color-button-background: #bfb051;
+    --color-side-spacer: #383e56;
 
 
-    --color-high-accent-text: #F4F4F2;
+    
 
-    --color-medium-accent-text: #BBBFCA;
+
+    --color-high-accent-text: #383e56;
+
+    --color-medium-accent-text: #ffffff;
 
     --color-high-accent-text-faded: #f4f4f296;
 
